@@ -16,6 +16,6 @@ public class GreetingController {
     @GetMapping
     public String greeting(@RequestParam Optional<String> name) {
         log.info("Greeting requested '{}'", name);
-        return String.format("Hello %s!", name.orElse("World"));
+        return String.format("Hello %s!", name.orElse("World, from Azure!"));
     }
 }
